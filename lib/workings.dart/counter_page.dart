@@ -49,6 +49,7 @@ class _CounterPageState extends State<CounterPage> {
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               '$counter',
@@ -62,7 +63,7 @@ class _CounterPageState extends State<CounterPage> {
               height: 10,
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
                   style: const ButtonStyle(
